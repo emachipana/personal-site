@@ -1,7 +1,9 @@
-import Colors from "./colors";
-import Font from "./font";
+import colors from "./colors";
+import font from "./font";
+import global from "./global";
 
 export {
-  Font,
-  Colors
+  font,
+  colors,
+  global
 }
