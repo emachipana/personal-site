@@ -1,5 +1,5 @@
-const Font = {
+const font = {
   primary: `'Source Code Pro', monospace`
 };
 
-export default Font;
+export default font;
