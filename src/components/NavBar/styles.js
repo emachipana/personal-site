@@ -1,5 +1,12 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles';
+import { css } from "@emotion/react";
+
+export const IconStyled = css`
+  color: ${colors.white};
+  font-size: 30px;
+  cursor: pointer;
+`;
 
 export const Container = styled.div`
   position: fixed;
@@ -28,6 +35,7 @@ export const Container = styled.div`
     font-size: 18px;
     color: white;
     transition: 0.2s ease-in;
+    font-weight: 600;
   }
   .link:hover {
     color: ${colors.red}
@@ -35,7 +43,7 @@ export const Container = styled.div`
   .logo {
     font-size: 24px;
     color: ${colors.white};
-    font-weight: 500;
+    font-weight: 600;
   }
   .nav-item {
     padding: 1rem;
@@ -66,7 +74,7 @@ export const Container = styled.div`
         top: 50px;
         align-items: center;
         flex-direction: column;
-        background-color: rgba(0,0,0,.9);
+        background-color: ${colors.gray.move};
         width: 100%;
         height: 100vh;
         z-index: 999;
