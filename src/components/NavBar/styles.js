@@ -3,7 +3,6 @@ import { colors } from '../../styles';
 import { css } from "@emotion/react";
 
 export const IconStyled = css`
-  color: ${colors.white};
   font-size: 30px;
   cursor: pointer;
 `;
@@ -17,7 +16,7 @@ export const Container = styled.div`
   z-index: 5;
   transition: .3s ease-in;
   overflow: hidden;
-  background-color: ${({ isMove }) => isMove ? colors.gray.move : "transparent"};
+  background-color: ${({ isMove, theme }) => isMove ? colors[theme].move : "transparent"};
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,10 +29,11 @@ export const Container = styled.div`
   .nav-menu {
     list-style: none;
     display: flex;
+    align-items: center;
   }
   .link {
     font-size: 18px;
-    color: white;
+    color: ${({theme}) => colors[theme].font};
     transition: 0.2s ease-in;
     font-weight: 600;
   }
@@ -42,7 +42,7 @@ export const Container = styled.div`
   }
   .logo {
     font-size: 24px;
-    color: ${colors.white};
+    color: ${({theme}) => colors[theme].font};
     font-weight: 600;
   }
   .nav-item {
@@ -54,7 +54,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width:940px) {
-    background-color: ${({ isOpen, isMove }) => (isOpen || isMove) ? colors.gray.move : "transparent"};
+    background-color: ${({ isOpen, isMove, theme }) => (isOpen || isMove) ? colors[theme].move : "transparent"};
 
     .navbar {
         width: 95%;
@@ -63,10 +63,6 @@ export const Container = styled.div`
     .hamburger {
         display: block;
     }
-
-    .link {
-      margin-left: -25px;
-    }
   
     .nav-menu {
         position: fixed;
@@ -74,7 +70,7 @@ export const Container = styled.div`
         top: 50px;
         align-items: center;
         flex-direction: column;
-        background-color: ${colors.gray.move};
+        background-color: ${({theme}) => colors[theme].move};
         width: 100%;
         height: 100vh;
         z-index: 999;

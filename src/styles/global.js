@@ -17,7 +17,6 @@ const global = css`
     list-style: none;
   }
   body {
-    background-color: ${colors.gray.primary};
     font-family: ${font.primary};
     color: ${colors.white};
   }
