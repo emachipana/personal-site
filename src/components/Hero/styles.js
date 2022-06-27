@@ -6,10 +6,10 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 10px;
   max-width: 100vw;
   height: 100vh;
-  
+  overflow: hidden;
+
   @media screen and (max-width: 720px) {
     margin-top: 10vh;
   }
