@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 10px;
-  width: 100%;
+  max-width: 100vw;
   height: 100vh;
   
   @media screen and (max-width: 720px) {
@@ -17,6 +17,7 @@ export const Container = styled.div`
 
 export const Info = styled.div`
   max-width: 440px;
+  margin: 0 1rem;
 `;
 
 export const Name = styled.span`
