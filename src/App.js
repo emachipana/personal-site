@@ -5,6 +5,7 @@ import { useState } from "react";
 import Loader from "./components/Loader/loader";
 import NavBar from "./components/NavBar";
 import { useTheme } from "./context/theme-context";
+import HomePage from "./pages/home-page";
 import { colors } from "./styles";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <>
       <Global styles={background}/>
       <NavBar />
+      <HomePage />
     </>
   );
 }

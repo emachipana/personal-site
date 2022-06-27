@@ -21,7 +21,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px; 
+    max-width: 1240px;
     height: 100%;
     padding: 0 1rem;
     margin: 0 auto;
@@ -30,6 +30,7 @@ export const Container = styled.div`
     list-style: none;
     display: flex;
     align-items: center;
+    padding: 0 1rem;
   }
   .link {
     font-size: 18px;
@@ -53,11 +54,11 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media screen and (max-width:940px) {
+  @media screen and (max-width: 720px) {
     background-color: ${({ isOpen, isMove, theme }) => (isOpen || isMove) ? colors[theme].move : "transparent"};
 
     .navbar {
-        width: 95%;
+        max-width: 98%;
     }
   
     .hamburger {
