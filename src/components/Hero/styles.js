@@ -25,7 +25,7 @@ export const Name = styled.span`
   color: ${colors.red};
 `;
 
-export const Detail = styled.span`
+export const Detail = styled.div`
   font-size: 32px;
   font-weight: 700;
   color: ${({theme}) => colors[theme].font};
@@ -33,6 +33,7 @@ export const Detail = styled.span`
 
 export const Text = styled.h2`
   font-size: 30px;
+  line-height: 50px;
 `;
 
 export const Image = styled.div`
