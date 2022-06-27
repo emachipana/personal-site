@@ -7,6 +7,7 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import NavItem from "./nav-item";
 import { useTheme } from "../../context/theme-context";
+import ButtonSwitch from "../ButtonSwitch";
 
 function NavBar (){
   const [state, setState] = useState({
@@ -14,7 +15,7 @@ function NavBar (){
     isMove: false
   })
 
-  const { theme, changeTheme } = useTheme();
+  const { theme } = useTheme();
   const colorIcon = colors[theme].font;
 
   const { isOpen, isMove } = state;
@@ -31,7 +32,7 @@ function NavBar (){
   return (
     <Style.Container isMove={isMove} isOpen={isOpen} theme={theme}>
       <nav className="navbar">
-        <Link className="logo" onClick={changeTheme} to="/">
+        <Link className="logo" to="/">
           <span style={{color: colors.red}}>{`<`}</span>
           Enmanuel
           <span style={{color: colors.red}}>{`/>`}</span>
@@ -53,6 +54,7 @@ function NavBar (){
           <NavItem to="/" onClickItem={handleCloseMenu}>Home</NavItem>
           <NavItem to="/portfolio" onClickItem={handleCloseMenu}>Portfolio</NavItem>
           <NavItem to="/contact" onClickItem={handleCloseMenu}>Contact me</NavItem>
+          <ButtonSwitch />
         </ul>
       </nav>
     </Style.Container>
