@@ -29,6 +29,7 @@ export const Container = styled.div`
   .nav-menu {
     list-style: none;
     display: flex;
+    align-items: center;
   }
   .link {
     font-size: 18px;
@@ -61,10 +62,6 @@ export const Container = styled.div`
   
     .hamburger {
         display: block;
-    }
-
-    .link {
-      margin-left: -25px;
     }
   
     .nav-menu {
