@@ -14,6 +14,7 @@ function App() {
   const background = css`
     body {
       background-color: ${colors[theme].background};
+      transition: .3s ease-in;
     }
   `;
 
