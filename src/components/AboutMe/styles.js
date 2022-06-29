@@ -2,11 +2,12 @@ import styled from "@emotion/styled";
 import { colors } from "../../styles";
 
 export const Container = styled.div`
-  max-width: 700px;
+  max-width: 580px;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 `;
 
 export const Title = styled.h1`
