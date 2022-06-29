@@ -35,14 +35,14 @@ export const skills = [
           />
   },
   {
-    name: "HTML5",
+    name: "HTML",
     icon: <TiHtml5 
             size="50px"
             color="#EB471C"
           />
   },
   {
-    name: "CSS3",
+    name: "CSS",
     icon: <DiCss3 
             size="50px"
             color="#4893D3"

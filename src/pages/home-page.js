@@ -1,7 +1,8 @@
 import AboutMe from "../components/AboutMe/about-me";
 import Hero from "../components/Hero";
 import MySkills from "../components/MySkills/my-skills";
-import { MainContainer } from "./styes";
+import { MainContainer, LinkTo } from "./styes";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 function HomePage() {
   return (
@@ -9,6 +10,10 @@ function HomePage() {
       <Hero />
       <AboutMe />
       <MySkills />
+      <LinkTo to="/portfolio">
+        See Projects
+        <BsArrowReturnRight />
+      </LinkTo>
     </MainContainer>
   )
 };
