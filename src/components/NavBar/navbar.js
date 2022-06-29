@@ -23,7 +23,7 @@ function NavBar (){
   const handleCloseMenu = () => setState({ ...state, isOpen: false });
   
   const hanldeClickMove = () => {
-    if(window.scrollY >= 70) return setState({ ...state, isMove: true });
+    if(window.scrollY >= 50) return setState({ ...state, isMove: true });
     return setState({ ...state, isMove: false });
   }
 
