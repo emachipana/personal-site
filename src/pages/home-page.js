@@ -1,20 +1,19 @@
 import AboutMe from "../components/AboutMe/about-me";
 import Hero from "../components/Hero";
 import MySkills from "../components/MySkills/my-skills";
-import { MainContainer, LinkTo } from "./styes";
-import { BsArrowReturnRight } from "react-icons/bs";
+import Footer from "../components/Footer";
+import { MainContainer } from "./styes";
 
 function HomePage() {
   return (
-    <MainContainer>
-      <Hero />
-      <AboutMe />
-      <MySkills />
-      <LinkTo to="/portfolio">
-        See Projects
-        <BsArrowReturnRight />
-      </LinkTo>
-    </MainContainer>
+    <>
+      <MainContainer>
+        <Hero />
+        <AboutMe />
+        <MySkills />
+      </MainContainer>
+      <Footer />
+    </>
   )
 };
 
