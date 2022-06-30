@@ -9,7 +9,7 @@ function Footer() {
   
   return (
     <Style.Container theme={theme}>
-      <Style.Title>Contact me</Style.Title>
+      <Style.Title theme={theme}>Contact me</Style.Title>
       <Style.Info>
         { socials.map((social, index) => (
           <Style.Icon
@@ -21,13 +21,13 @@ function Footer() {
             { social.icon }
           </Style.Icon>
         )) }
-        <Style.Text>or</Style.Text>
-        <Style.Text>
+        <Style.Text theme={theme}>or</Style.Text>
+        <Style.Text theme={theme}>
           <HiOutlineMail />
           {" "}
           emachipana0102@gmail.com
         </Style.Text>
-        <Style.Text>
+        <Style.Text theme={theme}>
           <AiFillPhone />
           +51 984601113
         </Style.Text>
