@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-size: 36px;
   text-align: center;
-  color: ${({ theme }) => colors[theme].footerFont};
+  color: ${colors.card};
 `;
 
 export const Info = styled.div`
@@ -51,5 +51,5 @@ export const Text = styled.p`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: ${({ theme }) => colors[theme].footerFont};
+  color: ${colors.card};
 `;
