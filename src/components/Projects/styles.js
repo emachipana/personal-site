@@ -2,27 +2,6 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { colors } from "../../styles";
 
-export const Container = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-  overflow: hidden;
-  @media screen and (max-width: 720px) {
-    margin-top: 10vh;
-  }
-`;
-
-export const Title = styled.h1`
-  font-size: 50px;
-  color: ${colors.red};
-  text-align: center;
-`;
-
 export const Section = styled.div`
   max-width: 720px;
   display: flex;

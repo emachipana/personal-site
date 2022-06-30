@@ -2,14 +2,15 @@ import { useTheme } from "../../context/theme-context";
 import { projects } from "../../data/projects";
 import * as Style from "./styles";
 import { Bounce } from "react-reveal";
+import { Container, Title } from "../../pages/styes";
 
 function Projects() {
   const { theme } = useTheme();
 
   return (
-    <Style.Container>
+    <Container direction="column" margin="2rem">
       <Bounce right>
-        <Style.Title>Portfolio</Style.Title>
+        <Title>Portfolio</Title>
         <Style.Section>
           { projects.map((project, index) => (
             <Style.Card
@@ -23,7 +24,7 @@ function Projects() {
           )) }
         </Style.Section>
       </Bounce>
-    </Style.Container>
+    </Container>
   );
 }
 
