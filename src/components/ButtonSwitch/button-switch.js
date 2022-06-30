@@ -6,7 +6,7 @@ function ButtonSwitch() {
 
   return (
     <Style.Switch theme={theme}>
-      <input type="checkbox" onClick={changeTheme} className="check" checked={theme==="light"} />
+      <input type="checkbox" onClick={changeTheme} className="check" defaultChecked={theme==="light"} />
       <span className="slider"></span>
     </Style.Switch>
   )
