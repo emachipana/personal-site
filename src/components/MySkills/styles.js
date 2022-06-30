@@ -11,11 +11,6 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const Title = styled.h1`
-  font-size: 50px;
-  color: ${colors.red};
-`;
-
 export const Cards = styled.div`
   padding: 0.5rem;
   display: flex;
