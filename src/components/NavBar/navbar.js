@@ -20,7 +20,10 @@ function NavBar (){
 
   const { isOpen, isMove } = state;
   const handleClickMenu = () => setState({ ...state, isOpen: !isOpen });
-  const handleCloseMenu = () => setState({ ...state, isOpen: false });
+  const handleCloseMenu = () => {
+    window.scrollTo(0, 0);
+    setState({ ...state, isOpen: false })
+  };
   
   const hanldeClickMove = () => {
     if(window.scrollY >= 50) return setState({ ...state, isMove: true });
