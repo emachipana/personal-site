@@ -24,14 +24,14 @@ export const skills = [
     name: "Javascript",
     icon: <SiJavascript 
             size="45px"
-            color="#F2CF3C"
+            color="#FFCC00"
           />
   },
   {
     name: "Ruby",
     icon: <DiRubyRough 
             size="45px"
-            color="#A81C02"
+            color="#C91E00"
           />
   },
   {

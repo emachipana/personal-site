@@ -5,26 +5,34 @@ import { DiRubyRough } from "react-icons/di";
 export const projects = [
   {
     name: "Ruby Projects",
-    to: "/ruby",
-    color: "#FF2200",
-    icon: <DiRubyRough />
+    to: "ruby",
+    icon: <DiRubyRough
+            size="65px"
+            color="#C91E00"
+          />
   },
   {
     name: "Rails Projects",
-    to: "/rails",
-    color: "#C71B00",
-    icon: <SiRubyonrails />
+    to: "rails",
+    icon: <SiRubyonrails
+            size="70px"
+            color="#C22200"
+          />
   },
   {
     name: "Javascript Projects",
-    to: "/javascript",
-    color: "#F3DB00",
-    icon: <SiJavascript />
+    to: "javascript",
+    icon: <SiJavascript
+            size="55px"
+            color="#FFCC00"
+          />
   },
   {
     name: "React Projects",
-    to: "/react",
-    color: "#61CFEE",
-    icon: <GrReactjs />
+    to: "react",
+    icon: <GrReactjs
+            size="55px"
+            color="#61CFEE"
+          />
   }
 ];
