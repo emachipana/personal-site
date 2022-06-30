@@ -8,6 +8,7 @@ import Loader from "./components/Loader/loader";
 import NavBar from "./components/NavBar";
 import { useTheme } from "./context/theme-context";
 import HomePage from "./pages/home-page";
+import NotFound from "./pages/notfound-page";
 import PortfolioPage from "./pages/portfolio-page";
 import { colors } from "./styles";
 
@@ -25,7 +26,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false)
-  }, 1000)
+  }, 1500)
 
   return (
     isLoadig ? <Loader /> :   
@@ -37,7 +38,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<h1>Contact me</h1>} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

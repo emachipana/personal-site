@@ -2,6 +2,7 @@ import { useTheme } from "../../context/theme-context";
 import { skills } from "../../data/skills";
 import * as Styles from "./styles";
 import { LightSpeed } from "react-reveal";
+import { Title } from "../../pages/styes";
 
 function MySkills() {
   const { theme } = useTheme();
@@ -9,7 +10,7 @@ function MySkills() {
   return (
     <Styles.Container>
       <LightSpeed right>
-        <Styles.Title>My Skills</Styles.Title>
+        <Title>My Skills</Title>
         <Styles.Cards>
           { skills.map(skill => (
             <Styles.Card theme={theme} key={skill.name}>

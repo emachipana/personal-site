@@ -1,6 +1,7 @@
 import { useTheme } from "../../context/theme-context";
 import * as Style from "./styles";
 import { Slide } from "react-reveal";
+import { Title } from "../../pages/styes";
 
 function AboutMe() {
   const { theme } = useTheme();
@@ -8,7 +9,7 @@ function AboutMe() {
   return (
     <Style.Container>
       <Slide left>
-        <Style.Title>About Me</Style.Title>
+        <Title>About Me</Title>
         <Style.Text theme={theme}>
             I'm a Full-Stack Web Developer 💻 with experience
             building high quality websites 💪
