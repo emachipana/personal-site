@@ -1,8 +1,11 @@
 import Projects from "../components/Projects";
+import * as Style from "./styes";
 
 function PortfolioPage() {
   return (
-    <Projects />
+    <Style.MainContainer>
+      <Projects />
+    </Style.MainContainer>
   );
 }
 
