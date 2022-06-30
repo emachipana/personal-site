@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/theme-context";
-import { skills } from "../../data/en/skills";
+import { skills } from "../../data/skills";
 import * as Styles from "./styles";
 import { LightSpeed } from "react-reveal";
 
