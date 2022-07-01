@@ -37,6 +37,7 @@ function App() {
         <Route index path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/portfolio/:name" element={<PortfolioPage />} />
         <Route path="/contact" element={<h1>Contact me</h1>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
