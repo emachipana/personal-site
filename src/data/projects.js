@@ -15,7 +15,7 @@ export const projects = [
         name: "CalenCLI",
         description: "This project simulates a personal calendar, it uses the basic concepts of ruby, here you can manage your day to day",
         tags: ["Dates", "Methods", "Loops"],
-        image: "https://hilarious-sunflower-706e73.netlify.app/assets/img/project_images/calenCLI.png",
+        image: "https://i.ibb.co/3yGWXKM/calenCLI.png",
         to: "https://github.com/emachipana/CalenCLI"
       },
       {
@@ -66,7 +66,7 @@ export const projects = [
       {
         name: "Centro Vacacional API",
         description: "It is an API for a 3-star hotel, with customer service and basic services",
-        tags: ["API", "Bcrypt"],
+        tags: ["API Rest", "Bcrypt"],
         image: "https://rubyonrails.org/assets/images/opengraph.png",
         to: "https://github.com/emachipana/centro-vacacional-api"
       }
@@ -83,7 +83,7 @@ export const projects = [
       {
         name: "Organizable",
         description: "Keep track of all your projects and task with this revolutionary",
-        tags: ["Authentication", "API Requests", "Session Storage"],
+        tags: ["Auth", "API Requests", "Session Storage"],
         image: "https://i.ibb.co/bPYqtJ2/organizable.png",
         to: "https://github.com/emachipana/js-organizable"
       },
@@ -114,7 +114,7 @@ export const projects = [
       {
         name: "Github Stats",
         description: "You can search for github users from all over the world and read their public information",
-        tags: ["Authentication", "API Requests", "emotion", "router"],
+        tags: ["Authentication", "API Requests", "emotion"],
         image: "https://i.ibb.co/zZN9SFw/github-stats.png",
         to: "https://github.com/emachipana/github-stats"
       },
