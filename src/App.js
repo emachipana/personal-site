@@ -27,7 +27,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false)
-  }, 1500)
+  }, 1000)
 
   return (
     isLoadig ? <Loader /> :   
