@@ -5,6 +5,7 @@ import Rails from "../components/Projects/Rails";
 import React from "../components/Projects/React";
 import Ruby from "../components/Projects/Ruby";
 import * as Style from "./styes";
+import { Flip } from "react-reveal";
 
 function PortfolioPage() {
   const params = useParams();
@@ -16,10 +17,14 @@ function PortfolioPage() {
         ?
         <Projects /> 
         :
-        (params.name === "ruby" && <Ruby />) ||
-        (params.name === "rails" && <Rails />) ||
-        (params.name === "javascript" && <Javascript />) ||
-        (params.name === "react" && <React />)
+        <Flip left>
+          {
+          (params.name === "ruby" && <Ruby />) ||
+          (params.name === "rails" && <Rails />) ||
+          (params.name === "javascript" && <Javascript />) ||
+          (params.name === "react" && <React />)
+          }
+        </Flip>
       }
     </Style.MainContainer>
   );

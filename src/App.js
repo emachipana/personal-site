@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Loader from "./components/Loader/loader";
 import NavBar from "./components/NavBar";
 import { useTheme } from "./context/theme-context";
+import ContactPage from "./pages/contact-page";
 import HomePage from "./pages/home-page";
 import NotFound from "./pages/notfound-page";
 import PortfolioPage from "./pages/portfolio-page";
@@ -38,7 +39,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/portfolio/:name" element={<PortfolioPage />} />
-        <Route path="/contact" element={<h1>Contact me</h1>} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
