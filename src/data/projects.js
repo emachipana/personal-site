@@ -119,6 +119,13 @@ export const projects = [
         to: "https://github.com/emachipana/github-stats"
       },
       {
+        name: "Eatable",
+        description: "Food for everyone, this app contains purchase with cart and delivery",
+        tags: ["state", "API Requests"],
+        image: "https://i.ibb.co/H4Qq7RC/eatable.png",
+        to: "https://github.com/emachipana/eatable"
+      },
+      {
         name: "Expensable Session",
         description: "This is a hands-on session form in React, where we consume the Expensable API",
         tags: ["Authentication", "API Requests"],
